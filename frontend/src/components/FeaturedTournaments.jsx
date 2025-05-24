@@ -274,7 +274,7 @@ export default function FeaturedTournaments() {
                 </div>
 
                 {/* Entry Fee */}
-                <div className="mb-5 flex items-center bg-white/10 px-3 py-2 rounded-xl inline-block">
+                <div className="mb-5 flex items-center bg-white/10 px-3 py-2 rounded-xl">
                   <IndianRupee className="h-4 w-4 text-yellow-400 mr-1" />
                   <span className="text-white font-bold text-sm">Entry Fee: {tournament.entryFee}</span>
                 </div>

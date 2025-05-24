@@ -22,7 +22,7 @@ import Wallet from './components/Wallet';
 import ProfilePage from './pages/ProfilePage';
 import NotificationsPage from './pages/notifications';
 import Rewards from './components/rewards';
-import History from './components/history';
+import History from './components/History';
 import CommunityWrapper from './pages/community';
 import GameDashboard from './components/GameDashboard';
 import GameModeRouter from './components/GameModeRouter';
