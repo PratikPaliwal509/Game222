@@ -136,7 +136,7 @@ const TictactoeGameLogic = ({ onGameEnd }) => {
     const initializeGame = async () => {
       try {
         setError(null);
-        const response = await axios.get(`http://localhost:5000/api/tictactoe/room/${roomId}`);
+        const response = await axios.get(`game222-dpyc17b6c-boostnowais-projects.vercel.app/api/tictactoe/room/${roomId}`);
         const game = response.data;
         console.log("getting data")
         if (!game) {
@@ -165,7 +165,7 @@ const TictactoeGameLogic = ({ onGameEnd }) => {
       if (!gameId || !playerId1 || !playerId2) return;
 
       try {
-        const response = await axios.put(`http://localhost:5000/api/tictactoe/assignPlayers/${gameId}`, {
+        const response = await axios.put(`game222-dpyc17b6c-boostnowais-projects.vercel.app/api/tictactoe/assignPlayers/${gameId}`, {
           player1: {
             playerId: playerId1,
             name: 'Player 1',
@@ -226,7 +226,7 @@ const TictactoeGameLogic = ({ onGameEnd }) => {
       setIsUpdating(true);
       setError(null);
       
-      const response = await axios.put(`http://localhost:5000/api/tictactoe/move/${gameId}`, {
+      const response = await axios.put(`game222-dpyc17b6c-boostnowais-projects.vercel.app/api/tictactoe/move/${gameId}`, {
         row,
         col,
         playerId: userId,
