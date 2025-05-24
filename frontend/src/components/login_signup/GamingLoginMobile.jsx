@@ -633,9 +633,10 @@ const handleLogin = async (e) => {
 
   setIsLoading(true);
   try {
-    const response = await fetch('https://game222-d4hq.vercel.app/api/auth/login', {
+    const response = await fetch('https://game222.vercel.app/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      
       body: JSON.stringify({
         phoneNumber: loginForm.phone,
         password: loginForm.password,
@@ -693,7 +694,7 @@ const handleLogin = async (e) => {
   setIsLoading(true);
 
   try {
-    const response = await fetch('https://game222-d4hq.vercel.app/api/auth/signup', {
+    const response = await fetch('https://game222.vercel.app/api/auth/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
