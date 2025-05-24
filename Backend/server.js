@@ -18,7 +18,7 @@ const server = http.createServer(app);
 // Setup Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "*", // React app
+    origin: "https://game222-d4hq.vercel.app/", // React app
     methods: ["GET", "POST", "PUT"],
   },
 });
